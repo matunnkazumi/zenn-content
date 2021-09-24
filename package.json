@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Zennで記事を書く用",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preview": "zenn preview"
   },
   "author": "matunnkazumi <developer@matunnkazumi.space>",
   "license": "ISC",
