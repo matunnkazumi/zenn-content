@@ -6,5 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "matunnkazumi <developer@matunnkazumi.space>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "zenn-cli": "^0.1.96"
+  }
 }
