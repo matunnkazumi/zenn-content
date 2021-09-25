@@ -7,6 +7,7 @@
   },
   "author": "matunnkazumi <developer@matunnkazumi.space>",
   "license": "ISC",
+  "packageManager": "pnpm@6.15.1",
   "devDependencies": {
     "zenn-cli": "^0.1.96"
   }
