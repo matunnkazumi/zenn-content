@@ -37,7 +37,7 @@ yarn、pnpmはグローバルインストールしていません
 # 手順
 まずは手順から
 
-1. Node.jsの16.9.0をインストール
+## Node.jsの16.9.0をインストール
 
 ```bash
 > asdf install nodejs 16.10.0
@@ -45,29 +45,29 @@ yarn、pnpmはグローバルインストールしていません
 普通にasdfでインストールします。
 
 
-2. 適当なディレクトリを作って移動します
+## 適当なディレクトリを作って移動します
 ```bash
 > mkdir tekitou_na_dexirectori ; cd $_
 ```
 
-3. インストールしたNode.jsをそのディレクトリで有効化します
+## インストールしたNode.jsをそのディレクトリで有効化します
 ```bash
 > asdf local nodejs 16.10.0
 ```
 
-4. Corepackを有効化します
+## Corepackを有効化します
 ```bash
 > corepack enable
 ```
 16.10.0の時点ではCorepackは実験的機能なので、使う前に有効化する必要があるとのことです。この手順が将来的にどうなるかは分かりません。
 
-5. asdfのshimを作り直します
+## asdfのshimを作り直します
 ```bash
 > asdf reshim nodejs
 ```
 通常はあまり使わないかと思います（少なくとも私は）。corepackでインストールした yarn、pnpm を使うためにこれが必要です
 
-6. ではpackage.jsonを作ってパッケージマネージャとバージョンを指定しましょう
+## ではpackage.jsonを作ってパッケージマネージャとバージョンを指定しましょう
 ```json
 {
   "packageManager": "yarn@3.0.0"
@@ -75,7 +75,7 @@ yarn、pnpmはグローバルインストールしていません
 ```
 Corepackで一番やりたいやつですね。
 
-7. 動作確認
+## 動作確認
 ```bash
 > yarn --version
 3.0.0
