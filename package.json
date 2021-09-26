@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "description": "Zennで記事を書く用",
   "scripts": {
-    "preview": "zenn preview"
+    "preview": "zenn preview",
+    "lint": "textlint **/*.md"
   },
   "author": "matunnkazumi <developer@matunnkazumi.space>",
   "license": "ISC",
