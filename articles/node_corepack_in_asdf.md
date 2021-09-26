@@ -3,7 +3,7 @@ title: "asdf管理下のNode.jsでCorepackを使ったメモ"
 emoji: "🙂"
 type: "tech"
 topics: ["nodejs", "corepack", "asdf", "yarn", "pnpm"]
-published: false
+published: true
 ---
 
 :::message
