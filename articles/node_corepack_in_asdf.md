@@ -153,7 +153,7 @@ nodejs 16.9.0
 ```.tool-version```
 ```
 nodejs 14.17.6
-yarn 1.22.10
+yarn 1.22.11
 ```
 こっちはasdf管理下のyarnを使いたいのでこうします。
 
