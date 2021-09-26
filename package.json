@@ -10,6 +10,7 @@
   "license": "ISC",
   "packageManager": "pnpm@6.15.1",
   "devDependencies": {
+    "prettier": "^2.4.1",
     "textlint": "^12.0.2",
     "textlint-rule-preset-ja-spacing": "^2.2.0",
     "textlint-rule-preset-ja-technical-writing": "^7.0.0",
