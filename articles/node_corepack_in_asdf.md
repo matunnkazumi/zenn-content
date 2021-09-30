@@ -39,30 +39,30 @@ yarn、pnpmはグローバルインストールしていません。
 
 ## Node.jsの16.9.0以降をインストール
 
-```bash
+```shell-session
 > asdf install nodejs 16.10.0
 ```
 普通にasdfでインストールします。記事作成時点で16.10.0が出ていました。
 
 
 ## 適当なディレクトリを作って移動します
-```bash
+```shell-session
 > mkdir tekitou_na_dexirectori ; cd $_
 ```
 
 ## インストールしたNode.jsをそのディレクトリで有効化します
-```bash
+```shell-session
 > asdf local nodejs 16.10.0
 ```
 
 ## Corepackを有効化します
-```bash
+```shell-session
 > corepack enable
 ```
 16.10.0の時点ではCorepackは実験的機能なので、使う前に有効化する必要があるとのことです。この手順が将来的にどうなるかは分かりません。
 
 ## asdfのshimを作り直します
-```bash
+```shell-session
 > asdf reshim nodejs
 ```
 通常はあまり使わないでしょう（少なくとも私は）。corepackでインストールしたyarn、pnpmを使うためにこれが必要です。
@@ -76,7 +76,7 @@ yarn、pnpmはグローバルインストールしていません。
 Corepackで一番やりたいやつですね。
 
 ## 動作確認
-```bash
+```shell-session
 > yarn --version
 3.0.0
 ```
@@ -89,7 +89,7 @@ Corepackで一番やりたいやつですね。
   "packageManager": "pnpm@6.15.1"
 }
 ```
-```bash
+```shell-session
 > yarn --version
 Usage Error: This project is configured to use pnpm
 
@@ -108,14 +108,14 @@ asdfは仕組みとして、インストールしたコマンドを、```~/.asdf
 具体的に言えば、今回の場合だと```~/.asdf/installs/nodejs/16.10.0/bin```にあるファイルです。
 
 これが、インストール直後のタイミングだと
-```bash
+```shell-session
 > ls ~/.asdf/installs/nodejs/16.10.0/bin
 corepack  node  npm  npx
 ```
 という状態になっているので、これを元にshimを更新しているようです。
 
 ここで```corepack enable```を実行してみましょう。
-```bash
+```shell-session
 > corepack enable
 > ls ~/.asdf/installs/nodejs/16.10.0/bin
 corepack  node  npm  npx  pnpm  pnpx  yarn  yarnpkg
@@ -161,7 +161,7 @@ nodejs 14.17.6
 yarn 1.22.15
 ```
 同様にasdf管理下のyarnを使います。
-```bash
+```shell-session
 > yarn set version 3.0.0
 ```
 asdf的にはv1系最新をインストールした状態にして、そのyarnのコマンド側の設定でv2以降を使うようにします。
