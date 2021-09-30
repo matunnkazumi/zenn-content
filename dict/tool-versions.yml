@@ -1,0 +1,10 @@
+id: tool-versions
+description: '.tool-versions file name'
+expected: '.tool-versions'
+patterns:
+  - /\.tool-version/
+specs:
+  - from: '.tool-version'
+    to: '.tool-versions'
+tags:
+  - typo

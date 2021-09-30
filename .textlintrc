@@ -3,7 +3,7 @@
     "allowlist": {
       "allow": [
         ":::",
-        "/:::details\\s.*/",
+        "/:::details\\s.*/"
       ]
     }
   },
@@ -12,6 +12,16 @@
     "preset-ja-technical-writing": {
       "ja-no-successive-word": false
     },
-    "preset-japanese": true
+    "preset-japanese": true,
+    "@proofdict/proofdict": {
+      "dicts": [
+        {
+          "dictURL": "https://azu.github.io/proof-dictionary/"
+        },
+        {
+          "dictGlob": "./dict/*.yml"
+        }
+      ]
+    }
   }
 }
