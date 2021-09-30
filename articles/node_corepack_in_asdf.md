@@ -149,7 +149,7 @@ nodejs 16.9.0
 }
 ```
 
-## Node.js 16.9.0より前、yarn v1系を使う場合
+## Node.js 16.9.0より前(Corepack無し)、yarn v1系を使う場合
 ```.tool-versions```
 ```
 nodejs 14.17.6
@@ -158,7 +158,7 @@ yarn 1.22.15
 こっちはasdf管理下のyarnを使いたいのでこうします。
 
 
-## Node.js 16.9.0より前、yarn v2以降を使う場合
+## Node.js 16.9.0より前(Corepack無し)、yarn v2以降を使う場合
 ```.tool-versions```
 ```
 nodejs 14.17.6
