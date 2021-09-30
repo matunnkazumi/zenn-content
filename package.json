@@ -5,9 +5,11 @@
   "scripts": {
     "preview": "zenn preview",
     "lint": "run-s lint:prettier lint:textlint",
-    "lint:textlint": "textlint **/*.md",
+    "lint:textlint": "textlint .",
     "lint:prettier": "prettier --check .",
-    "format": "prettier --write ."
+    "format": "run-s format:prettier format:textlint",
+    "format:textlint": "textlint --fix .",
+    "format:prettier": "prettier --write ."
   },
   "author": "matunnkazumi <developer@matunnkazumi.space>",
   "license": "ISC",
