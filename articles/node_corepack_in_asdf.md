@@ -131,12 +131,12 @@ corepack  node  npm  npx  pnpm  pnpx  yarn  yarnpkg
 # 16.9.0より前のNode.jsやasdfのyarn, pnpmプラグインとの共存
 Corepackを有効化した場合も、yarn、pnpmのプラグインのアンインストールは不要で、共存というか使い分けが可能です。
 
-asdf使いの人はご存知でしょうが、使うコマンドのバージョンの切り替えは```.tool-version```というファイルで制御されています。
+asdf使いの人はご存知でしょうが、使うコマンドのバージョンの切り替えは```.tool-versions```というファイルで制御されています。
 
 ## Node.js 16.9.0以降 corepack有効化の場合
 上述の手順通りではありますが、以下のような感じになっていればよいでしょう。
 
-```.tool-version```
+```.tool-versions```
 ```
 nodejs 16.9.0
 ```
@@ -150,7 +150,7 @@ nodejs 16.9.0
 ```
 
 ## Node.js 16.9.0より前、yarn v1系を使う場合
-```.tool-version```
+```.tool-versions```
 ```
 nodejs 14.17.6
 yarn 1.22.11
@@ -159,7 +159,7 @@ yarn 1.22.11
 
 
 ## Node.js 16.9.0より前、yarn v2以降を使う場合
-```.tool-version```
+```.tool-versions```
 ```
 nodejs 14.17.6
 yarn 1.22.11
@@ -177,7 +177,7 @@ https://github.com/twuni/asdf-yarn
 yarnのv2以降のインストール・設定などは既に色々解説などがありますのでそちらをご覧ください。
 
 ## 要点
-nodejsプラグイン管理下のyarnと、yarnプラグイン管理下のyarnの、どちらか1つだけを参照するように```.tool-version```を設定する、ということですね。
+nodejsプラグイン管理下のyarnと、yarnプラグイン管理下のyarnの、どちらか1つだけを参照するように```.tool-versions```を設定する、ということですね。
 
 両方参照できる状態にするのは多分やめたほうがいいでしょう。仕様的にどちらが優先されるのかがよく分からなかったので……。
 
