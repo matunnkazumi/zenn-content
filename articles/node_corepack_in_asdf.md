@@ -107,12 +107,12 @@ asdfは仕組みとして、インストールしたコマンドを、```~/.asdf
 
 具体的に言えば、今回の場合だと```~/.asdf/installs/nodejs/16.10.0/bin```にあるファイルです。
 
-これが、インストール直後のタイミングだと
+これが、インストール直後のタイミングだと以下のようになっています。
 ```shell-session
 > ls ~/.asdf/installs/nodejs/16.10.0/bin
 corepack  node  npm  npx
 ```
-という状態になっているので、これを元にshimを更新しているようです。
+このファイル群を元にshimを更新しているようです。
 
 ここで```corepack enable```を実行してみましょう。
 ```shell-session
