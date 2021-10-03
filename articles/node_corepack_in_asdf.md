@@ -28,11 +28,11 @@ https://asdf-vm.com/
 * OS: Debian GNU/Linux 10.10 (buster)
 * asdf-vm: v0.8.0
 * 導入済みasdfプラグイン
-  * [nodejs](https://github.com/asdf-vm/asdf-nodejs)
-  * [yarn](https://github.com/twuni/asdf-yarn)
-  * [pnpm](https://github.com/jonathanmorley/asdf-pnpm)
+  * [asdf-nodejs](https://github.com/asdf-vm/asdf-nodejs)
+  * [asdf-yarn](https://github.com/twuni/asdf-yarn)
+  * [asdf-pnpm](https://github.com/jonathanmorley/asdf-pnpm)
 
-yarn、pnpmはグローバルインストールしていません。
+yarn、pnpmはasdfでインストールしており、グローバルインストールしていません。
 
 # 手順
 まずは手順から。
