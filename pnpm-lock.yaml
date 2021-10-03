@@ -9,7 +9,7 @@ specifiers:
   textlint-rule-preset-ja-spacing: ^2.2.0
   textlint-rule-preset-ja-technical-writing: ^7.0.0
   textlint-rule-preset-japanese: ^7.0.0
-  zenn-cli: ^0.1.96
+  zenn-cli: ^0.1.98
 
 devDependencies:
   '@proofdict/textlint-rule-proofdict': 3.1.2
@@ -20,7 +20,7 @@ devDependencies:
   textlint-rule-preset-ja-spacing: 2.2.0
   textlint-rule-preset-ja-technical-writing: 7.0.0_textlint@12.0.2
   textlint-rule-preset-japanese: 7.0.0
-  zenn-cli: 0.1.96
+  zenn-cli: 0.1.98
 
 packages:
 
@@ -3611,8 +3611,8 @@ packages:
     engines: {node: '>=0.4'}
     dev: true
 
-  /zenn-cli/0.1.96:
-    resolution: {integrity: sha512-bPHOdIi2TF26Zx4p1kIerMAXHBYZTdvSQuQCubSoSmHw4coKECc1Ju0bgblIF4GfxSZzpLuBBKzqtBR4yeu2bQ==}
+  /zenn-cli/0.1.98:
+    resolution: {integrity: sha512-XHLtzOTip8qf+nj4WoQqOC+EQ3jC4GmC31YzERxc4bR/5MYTyEj0cCh5b1dbJDPM8f6P3L53k6b+nR+87h5afQ==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dependencies:
@@ -3630,15 +3630,15 @@ packages:
       node-fetch: 2.6.5
       open: 8.2.1
       ws: 7.5.5
-      zenn-markdown-html: 0.1.96
+      zenn-markdown-html: 0.1.98
     transitivePeerDependencies:
       - '@types/markdown-it'
       - bufferutil
       - utf-8-validate
     dev: true
 
-  /zenn-markdown-html/0.1.96:
-    resolution: {integrity: sha512-o8RfvVxXLmXuK07/9FczUdOUSvZa6YvqT8C31AcuDEqLTUv+5kBWvU1GjQOD68AZHLaESZdEvOT1BQbztpzSYw==}
+  /zenn-markdown-html/0.1.98:
+    resolution: {integrity: sha512-h4pzd97ZJIvGteyaPhneR90NOThrUszwXsIw/q4ZvJDKsBhLJj9SzG52vxW+MDh15Uk7Pxyh31wuyVPbCgwbEQ==}
     dependencies:
       '@steelydylan/markdown-it-imsize': 1.0.2
       '@steelydylan/prism-diff-highlight': 1.0.4
